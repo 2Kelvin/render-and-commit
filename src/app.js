@@ -4,11 +4,12 @@ function Mikasa() {
 
 function Gallery() {
   return (
-    <div className="gallery">
+    <section className="gallery">
+      <h1>Mikasa Ackerman</h1>
       <Mikasa />
       <Mikasa />
       <Mikasa />
-    </div>
+    </section>
   );
 }
 
@@ -18,7 +19,11 @@ export default function App() {
 
 // react-connection
 const root = ReactDOM.createRoot(document.getElementById("reactRoot"));
-root.render(<App />);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
 // NOTES
 // 2 reasons for a component to render: first/initial render & updating its state causing a rerender
@@ -26,4 +31,5 @@ root.render(<App />);
 // a rerender occurs when the state of your component changes & it has to rerender/ update with the new data
 
 //  rendering basically means react is calling your components
-//
+// on initial render (first time app runs), React calls the root component e.g. App
+// for subsequent renders, React calls only the function components whose state just updated
