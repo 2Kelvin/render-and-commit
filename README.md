@@ -1,5 +1,7 @@
 # render-and-commit
 
+![mikasaS](https://user-images.githubusercontent.com/85868026/202142034-33e38660-410f-491c-a2f7-f741a77811e8.png)
+
 In this documentation read, I learnt:
 
 - that UI component rendering process happens in 3 main stages: `triggering`(requesting for UI), `rendering` (creating the UI requested) and `committing` to the DOM (displaying the requested UI on the screen)
